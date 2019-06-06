@@ -1,3 +1,20 @@
+.btn {
+  background-color: #5c9ed1;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Trebuchet MS;
+  font-size: 13px;
+  padding: 8px 30px;
+  text-decoration: none;
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -169,23 +186,27 @@ img {
   margin: 0 auto;
 }
 header {
+  border-bottom: 2px dashed silver;
   display: flex;
-}
-header nav {
-  border: 1px solid red;
-  width: 100%;
-  justify-content: flex-end;
   align-items: center;
+  width: 100%;
 }
-header nav a {
+header a {
   text-decoration: none;
   color: black;
   font-weight: bold;
   font-size: 15px;
-  padding-left: 20px;
+  padding-left: 35px;
 }
-header nav h2 {
-  color: red;
+header h2 {
+  padding-top: 0.4em;
+  width: 7em;
+}
+header div {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 1%;
 }
 .footer {
   width: 100%;
@@ -243,4 +264,20 @@ header nav h2 {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+}
+.top-content p {
+  border-bottom: 2px dashed silver;
+}
+@media (max-width: 500px) {
+  .site-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: red;
+  }
 }
